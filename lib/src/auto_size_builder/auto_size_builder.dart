@@ -122,8 +122,7 @@ class _AutoSizeBuilderState extends State<AutoSizeBuilder> {
       strutStyle: widget.strutStyle,
       textWidthBasis: widget.textWidthBasis ?? defaultTextStyle.textWidthBasis,
       textHeightBehavior: widget.textHeightBehavior ??
-          defaultTextStyle.textHeightBehavior ??
-          DefaultTextHeightBehavior.of(context),
+          defaultTextStyle.textHeightBehavior,
       wrapWords: widget.wrapWords ?? false,
       textScaleFactor:
           widget.textScaleFactor ?? MediaQuery.textScaleFactorOf(context),
