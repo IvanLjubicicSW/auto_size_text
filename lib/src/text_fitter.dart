@@ -207,7 +207,7 @@ class TextFitter {
 
   @override
   int get hashCode {
-    return hashValues(
+    return Object.hash(
       text,
       textAlign,
       textDirection,
